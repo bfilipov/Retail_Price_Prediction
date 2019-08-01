@@ -14,7 +14,7 @@ from sklearn.metrics import mean_squared_error
 import lightgbm as lgb
 
 # Read dataset
-df = pd.read_csv('train.tsv', sep = '\t')
+df = pd.read_csv('data/train.tsv', sep = '\t')
 
 # Randomly split the data into train and test sets. 
 msk = np.random.rand(len(df)) < 0.8
